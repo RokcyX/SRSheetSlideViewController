@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8277A9382254A340001A2194 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8277A9372254A340001A2194 /* AppDelegate.m */; };
+		8277A93B2254A340001A2194 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8277A93A2254A340001A2194 /* ViewController.m */; };
+		8277A93E2254A340001A2194 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8277A93C2254A340001A2194 /* Main.storyboard */; };
+		8277A9402254A340001A2194 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8277A93F2254A340001A2194 /* Assets.xcassets */; };
+		8277A9432254A340001A2194 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8277A9412254A340001A2194 /* LaunchScreen.storyboard */; };
+		8277A9462254A340001A2194 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8277A9452254A340001A2194 /* main.m */; };
+		8277A9502254A341001A2194 /* SRSheetSlideViewControllerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8277A94F2254A341001A2194 /* SRSheetSlideViewControllerDemoTests.m */; };
+		8277A95B2254A341001A2194 /* SRSheetSlideViewControllerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8277A95A2254A341001A2194 /* SRSheetSlideViewControllerDemoUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8277A94C2254A341001A2194 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8277A92B2254A340001A2194 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8277A9322254A340001A2194;
+			remoteInfo = SRSheetSlideViewControllerDemo;
+		};
+		8277A9572254A341001A2194 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8277A92B2254A340001A2194 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8277A9322254A340001A2194;
+			remoteInfo = SRSheetSlideViewControllerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8277A9332254A340001A2194 /* SRSheetSlideViewControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SRSheetSlideViewControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8277A9362254A340001A2194 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8277A9372254A340001A2194 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8277A9392254A340001A2194 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8277A93A2254A340001A2194 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8277A93D2254A340001A2194 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8277A93F2254A340001A2194 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8277A9422254A340001A2194 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8277A9442254A340001A2194 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8277A9452254A340001A2194 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8277A94B2254A341001A2194 /* SRSheetSlideViewControllerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SRSheetSlideViewControllerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8277A94F2254A341001A2194 /* SRSheetSlideViewControllerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRSheetSlideViewControllerDemoTests.m; sourceTree = "<group>"; };
+		8277A9512254A341001A2194 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8277A9562254A341001A2194 /* SRSheetSlideViewControllerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SRSheetSlideViewControllerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8277A95A2254A341001A2194 /* SRSheetSlideViewControllerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRSheetSlideViewControllerDemoUITests.m; sourceTree = "<group>"; };
+		8277A95C2254A341001A2194 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8277A9302254A340001A2194 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8277A9482254A341001A2194 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8277A9532254A341001A2194 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8277A92A2254A340001A2194 = {
+			isa = PBXGroup;
+			children = (
+				8277A9352254A340001A2194 /* SRSheetSlideViewControllerDemo */,
+				8277A94E2254A341001A2194 /* SRSheetSlideViewControllerDemoTests */,
+				8277A9592254A341001A2194 /* SRSheetSlideViewControllerDemoUITests */,
+				8277A9342254A340001A2194 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8277A9342254A340001A2194 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8277A9332254A340001A2194 /* SRSheetSlideViewControllerDemo.app */,
+				8277A94B2254A341001A2194 /* SRSheetSlideViewControllerDemoTests.xctest */,
+				8277A9562254A341001A2194 /* SRSheetSlideViewControllerDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8277A9352254A340001A2194 /* SRSheetSlideViewControllerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8277A9362254A340001A2194 /* AppDelegate.h */,
+				8277A9372254A340001A2194 /* AppDelegate.m */,
+				8277A9392254A340001A2194 /* ViewController.h */,
+				8277A93A2254A340001A2194 /* ViewController.m */,
+				8277A93C2254A340001A2194 /* Main.storyboard */,
+				8277A93F2254A340001A2194 /* Assets.xcassets */,
+				8277A9412254A340001A2194 /* LaunchScreen.storyboard */,
+				8277A9442254A340001A2194 /* Info.plist */,
+				8277A9452254A340001A2194 /* main.m */,
+			);
+			path = SRSheetSlideViewControllerDemo;
+			sourceTree = "<group>";
+		};
+		8277A94E2254A341001A2194 /* SRSheetSlideViewControllerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				8277A94F2254A341001A2194 /* SRSheetSlideViewControllerDemoTests.m */,
+				8277A9512254A341001A2194 /* Info.plist */,
+			);
+			path = SRSheetSlideViewControllerDemoTests;
+			sourceTree = "<group>";
+		};
+		8277A9592254A341001A2194 /* SRSheetSlideViewControllerDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8277A95A2254A341001A2194 /* SRSheetSlideViewControllerDemoUITests.m */,
+				8277A95C2254A341001A2194 /* Info.plist */,
+			);
+			path = SRSheetSlideViewControllerDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8277A9322254A340001A2194 /* SRSheetSlideViewControllerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8277A95F2254A341001A2194 /* Build configuration list for PBXNativeTarget "SRSheetSlideViewControllerDemo" */;
+			buildPhases = (
+				8277A92F2254A340001A2194 /* Sources */,
+				8277A9302254A340001A2194 /* Frameworks */,
+				8277A9312254A340001A2194 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SRSheetSlideViewControllerDemo;
+			productName = SRSheetSlideViewControllerDemo;
+			productReference = 8277A9332254A340001A2194 /* SRSheetSlideViewControllerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8277A94A2254A341001A2194 /* SRSheetSlideViewControllerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8277A9622254A341001A2194 /* Build configuration list for PBXNativeTarget "SRSheetSlideViewControllerDemoTests" */;
+			buildPhases = (
+				8277A9472254A341001A2194 /* Sources */,
+				8277A9482254A341001A2194 /* Frameworks */,
+				8277A9492254A341001A2194 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8277A94D2254A341001A2194 /* PBXTargetDependency */,
+			);
+			name = SRSheetSlideViewControllerDemoTests;
+			productName = SRSheetSlideViewControllerDemoTests;
+			productReference = 8277A94B2254A341001A2194 /* SRSheetSlideViewControllerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8277A9552254A341001A2194 /* SRSheetSlideViewControllerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8277A9652254A341001A2194 /* Build configuration list for PBXNativeTarget "SRSheetSlideViewControllerDemoUITests" */;
+			buildPhases = (
+				8277A9522254A341001A2194 /* Sources */,
+				8277A9532254A341001A2194 /* Frameworks */,
+				8277A9542254A341001A2194 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8277A9582254A341001A2194 /* PBXTargetDependency */,
+			);
+			name = SRSheetSlideViewControllerDemoUITests;
+			productName = SRSheetSlideViewControllerDemoUITests;
+			productReference = 8277A9562254A341001A2194 /* SRSheetSlideViewControllerDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8277A92B2254A340001A2194 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = STARRAIN;
+				TargetAttributes = {
+					8277A9322254A340001A2194 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					8277A94A2254A341001A2194 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 8277A9322254A340001A2194;
+					};
+					8277A9552254A341001A2194 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 8277A9322254A340001A2194;
+					};
+				};
+			};
+			buildConfigurationList = 8277A92E2254A340001A2194 /* Build configuration list for PBXProject "SRSheetSlideViewControllerDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8277A92A2254A340001A2194;
+			productRefGroup = 8277A9342254A340001A2194 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8277A9322254A340001A2194 /* SRSheetSlideViewControllerDemo */,
+				8277A94A2254A341001A2194 /* SRSheetSlideViewControllerDemoTests */,
+				8277A9552254A341001A2194 /* SRSheetSlideViewControllerDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8277A9312254A340001A2194 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8277A9432254A340001A2194 /* LaunchScreen.storyboard in Resources */,
+				8277A9402254A340001A2194 /* Assets.xcassets in Resources */,
+				8277A93E2254A340001A2194 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8277A9492254A341001A2194 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8277A9542254A341001A2194 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8277A92F2254A340001A2194 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8277A93B2254A340001A2194 /* ViewController.m in Sources */,
+				8277A9462254A340001A2194 /* main.m in Sources */,
+				8277A9382254A340001A2194 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8277A9472254A341001A2194 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8277A9502254A341001A2194 /* SRSheetSlideViewControllerDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8277A9522254A341001A2194 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8277A95B2254A341001A2194 /* SRSheetSlideViewControllerDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8277A94D2254A341001A2194 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8277A9322254A340001A2194 /* SRSheetSlideViewControllerDemo */;
+			targetProxy = 8277A94C2254A341001A2194 /* PBXContainerItemProxy */;
+		};
+		8277A9582254A341001A2194 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8277A9322254A340001A2194 /* SRSheetSlideViewControllerDemo */;
+			targetProxy = 8277A9572254A341001A2194 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8277A93C2254A340001A2194 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8277A93D2254A340001A2194 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8277A9412254A340001A2194 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8277A9422254A340001A2194 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8277A95D2254A341001A2194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8277A95E2254A341001A2194 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8277A9602254A341001A2194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y7UHDGK344;
+				INFOPLIST_FILE = SRSheetSlideViewControllerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.starrain.SRSheetSlideViewControllerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8277A9612254A341001A2194 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y7UHDGK344;
+				INFOPLIST_FILE = SRSheetSlideViewControllerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.starrain.SRSheetSlideViewControllerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8277A9632254A341001A2194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y7UHDGK344;
+				INFOPLIST_FILE = SRSheetSlideViewControllerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.starrain.SRSheetSlideViewControllerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SRSheetSlideViewControllerDemo.app/SRSheetSlideViewControllerDemo";
+			};
+			name = Debug;
+		};
+		8277A9642254A341001A2194 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y7UHDGK344;
+				INFOPLIST_FILE = SRSheetSlideViewControllerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.starrain.SRSheetSlideViewControllerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SRSheetSlideViewControllerDemo.app/SRSheetSlideViewControllerDemo";
+			};
+			name = Release;
+		};
+		8277A9662254A341001A2194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y7UHDGK344;
+				INFOPLIST_FILE = SRSheetSlideViewControllerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.starrain.SRSheetSlideViewControllerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SRSheetSlideViewControllerDemo;
+			};
+			name = Debug;
+		};
+		8277A9672254A341001A2194 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y7UHDGK344;
+				INFOPLIST_FILE = SRSheetSlideViewControllerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.starrain.SRSheetSlideViewControllerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SRSheetSlideViewControllerDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8277A92E2254A340001A2194 /* Build configuration list for PBXProject "SRSheetSlideViewControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8277A95D2254A341001A2194 /* Debug */,
+				8277A95E2254A341001A2194 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8277A95F2254A341001A2194 /* Build configuration list for PBXNativeTarget "SRSheetSlideViewControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8277A9602254A341001A2194 /* Debug */,
+				8277A9612254A341001A2194 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8277A9622254A341001A2194 /* Build configuration list for PBXNativeTarget "SRSheetSlideViewControllerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8277A9632254A341001A2194 /* Debug */,
+				8277A9642254A341001A2194 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8277A9652254A341001A2194 /* Build configuration list for PBXNativeTarget "SRSheetSlideViewControllerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8277A9662254A341001A2194 /* Debug */,
+				8277A9672254A341001A2194 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8277A92B2254A340001A2194 /* Project object */;
+}
