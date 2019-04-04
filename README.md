@@ -3,7 +3,9 @@
 ![image](https://github.com/RokcyX/SRSheetSlideViewController/blob/master/gif/1.gif)
 ![image](https://github.com/RokcyX/SRSheetSlideViewController/blob/master/gif/2.gif)
 ## 如何使用SRSheetSlide
+```
 使用CocoaPods安装：pod 'SRSheetSlide'
+```
 ## 在需要将控制器变成卡片滑动控制器的地方引入头文件
 ```
 #import "UIViewController+SRSheetSlide.h"
