@@ -1,13 +1,11 @@
 //
 //  SecondViewController.h
-//  SRSheetSlideViewControllerDemo
 //
-//  Created by 周家民 on 2019/4/3.
+//  Created by 周家民 on 2019/4/4.
 //  Copyright © 2019 STARRAIN. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "UIViewController+SRSheetSlide.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

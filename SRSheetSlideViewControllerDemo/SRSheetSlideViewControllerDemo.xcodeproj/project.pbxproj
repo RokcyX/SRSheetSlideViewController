@@ -10,8 +10,9 @@
 		820AA0B92254A74F0072679A /* UIViewController+SRSheetSlide.m in Sources */ = {isa = PBXBuildFile; fileRef = 820AA0B82254A74F0072679A /* UIViewController+SRSheetSlide.m */; };
 		824ADCD52254AD5F00DAF706 /* SRSheetSlideViewControllerAnimationTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 824ADCD42254AD5F00DAF706 /* SRSheetSlideViewControllerAnimationTransition.m */; };
 		824ADCDA2254B4E800DAF706 /* UIView+SRSheetSlide.m in Sources */ = {isa = PBXBuildFile; fileRef = 824ADCD92254B4E800DAF706 /* UIView+SRSheetSlide.m */; };
-		824ADCDD2254BD8E00DAF706 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824ADCDC2254BD8E00DAF706 /* SecondViewController.m */; };
 		824ADCE02254CCE300DAF706 /* SRSheetSlideViewControllerInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 824ADCDF2254CCE300DAF706 /* SRSheetSlideViewControllerInteractiveTransition.m */; };
+		824ADCE42255D68500DAF706 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824ADCE22255D68500DAF706 /* SecondViewController.m */; };
+		824ADCE52255D68500DAF706 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 824ADCE32255D68500DAF706 /* SecondViewController.xib */; };
 		8277A9382254A340001A2194 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8277A9372254A340001A2194 /* AppDelegate.m */; };
 		8277A93B2254A340001A2194 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8277A93A2254A340001A2194 /* ViewController.m */; };
 		8277A93E2254A340001A2194 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8277A93C2254A340001A2194 /* Main.storyboard */; };
@@ -47,10 +48,11 @@
 		824ADCD62254AD8C00DAF706 /* SRSheetSlideDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRSheetSlideDefine.h; sourceTree = "<group>"; };
 		824ADCD82254B4E800DAF706 /* UIView+SRSheetSlide.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+SRSheetSlide.h"; sourceTree = "<group>"; };
 		824ADCD92254B4E800DAF706 /* UIView+SRSheetSlide.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SRSheetSlide.m"; sourceTree = "<group>"; };
-		824ADCDB2254BD8E00DAF706 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		824ADCDC2254BD8E00DAF706 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		824ADCDE2254CCE300DAF706 /* SRSheetSlideViewControllerInteractiveTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRSheetSlideViewControllerInteractiveTransition.h; sourceTree = "<group>"; };
 		824ADCDF2254CCE300DAF706 /* SRSheetSlideViewControllerInteractiveTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRSheetSlideViewControllerInteractiveTransition.m; sourceTree = "<group>"; };
+		824ADCE12255D68500DAF706 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		824ADCE22255D68500DAF706 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		824ADCE32255D68500DAF706 /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 		8277A9332254A340001A2194 /* SRSheetSlideViewControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SRSheetSlideViewControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8277A9362254A340001A2194 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8277A9372254A340001A2194 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -120,6 +122,9 @@
 				8277A9682254A468001A2194 /* SRSheetSlideViewController */,
 				8277A9362254A340001A2194 /* AppDelegate.h */,
 				8277A9372254A340001A2194 /* AppDelegate.m */,
+				824ADCE12255D68500DAF706 /* SecondViewController.h */,
+				824ADCE22255D68500DAF706 /* SecondViewController.m */,
+				824ADCE32255D68500DAF706 /* SecondViewController.xib */,
 				8277A9392254A340001A2194 /* ViewController.h */,
 				8277A93A2254A340001A2194 /* ViewController.m */,
 				8277A93C2254A340001A2194 /* Main.storyboard */,
@@ -127,8 +132,6 @@
 				8277A9412254A340001A2194 /* LaunchScreen.storyboard */,
 				8277A9442254A340001A2194 /* Info.plist */,
 				8277A9452254A340001A2194 /* main.m */,
-				824ADCDB2254BD8E00DAF706 /* SecondViewController.h */,
-				824ADCDC2254BD8E00DAF706 /* SecondViewController.m */,
 			);
 			path = SRSheetSlideViewControllerDemo;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				824ADCE52255D68500DAF706 /* SecondViewController.xib in Resources */,
 				8277A9432254A340001A2194 /* LaunchScreen.storyboard in Resources */,
 				8277A9402254A340001A2194 /* Assets.xcassets in Resources */,
 				8277A93E2254A340001A2194 /* Main.storyboard in Resources */,
@@ -301,7 +305,7 @@
 				824ADCDA2254B4E800DAF706 /* UIView+SRSheetSlide.m in Sources */,
 				8277A93B2254A340001A2194 /* ViewController.m in Sources */,
 				824ADCE02254CCE300DAF706 /* SRSheetSlideViewControllerInteractiveTransition.m in Sources */,
-				824ADCDD2254BD8E00DAF706 /* SecondViewController.m in Sources */,
+				824ADCE42255D68500DAF706 /* SecondViewController.m in Sources */,
 				8277A9462254A340001A2194 /* main.m in Sources */,
 				8277A9382254A340001A2194 /* AppDelegate.m in Sources */,
 				824ADCD52254AD5F00DAF706 /* SRSheetSlideViewControllerAnimationTransition.m in Sources */,

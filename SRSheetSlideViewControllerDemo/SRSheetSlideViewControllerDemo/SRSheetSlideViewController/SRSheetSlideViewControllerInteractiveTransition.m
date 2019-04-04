@@ -166,7 +166,7 @@
                     offset = translation.x;
                     break;
             }
-            CGFloat percent =fmin(1, fmaxf(0, offset / 200.0));
+            CGFloat percent =fmin(1, fmaxf(0, fabs(offset) / 200.0));
             shouldComplete = percent > 0.5;
             [self updateInteractiveTransition:percent];
             break;

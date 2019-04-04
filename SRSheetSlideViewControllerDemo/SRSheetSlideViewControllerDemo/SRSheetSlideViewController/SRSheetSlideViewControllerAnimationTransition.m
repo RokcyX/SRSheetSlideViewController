@@ -75,7 +75,7 @@
     CGRect toVCViewFinalFrame = [transitionContext finalFrameForViewController:toVC];
     switch (self.sheetPosition) {
         case SRSheetSlideViewControllerSheetPositionTop:
-            toVCViewFinalFrame = CGRectMake(0, -toVCViewFinalFrame.size.height, toVCViewFinalFrame.size.width, toVCViewFinalFrame.size.height * toVC.displayPercent);
+            toVCViewFinalFrame = CGRectMake(0, -toVCViewFinalFrame.size.height * toVC.displayPercent, toVCViewFinalFrame.size.width, toVCViewFinalFrame.size.height * toVC.displayPercent);
             break;
         case SRSheetSlideViewControllerSheetPositionRight:
             toVCViewFinalFrame = CGRectMake(SRDeviceSize.width, toVCViewFinalFrame.origin.y, SRDeviceSize.width * toVC.displayPercent, toVCViewFinalFrame.size.height);
@@ -84,7 +84,7 @@
             toVCViewFinalFrame = CGRectMake(0, SRDeviceSize.height, toVCViewFinalFrame.size.width, toVCViewFinalFrame.size.height * toVC.displayPercent);
             break;
         case SRSheetSlideViewControllerSheetPositionLeft:
-            toVCViewFinalFrame = CGRectMake(-toVCViewFinalFrame.size.width, 0, toVCViewFinalFrame.size.width * toVC.displayPercent, toVCViewFinalFrame.size.height);
+            toVCViewFinalFrame = CGRectMake(-toVCViewFinalFrame.size.width * toVC.displayPercent, 0, toVCViewFinalFrame.size.width * toVC.displayPercent, toVCViewFinalFrame.size.height);
             break;
     }
     toVC.view.frame = toVCViewFinalFrame;

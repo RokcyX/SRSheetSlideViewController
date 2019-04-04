@@ -15,18 +15,57 @@ static char * const kAnimationTransitionKey = "kAnimationTransitionKey";
 static char * const kInteractiveTransitionKey = "kInteractiveTransitionKey";
 static char * const kDisplayPercentKey = "kDisplayPercentKey";
 static char * const kTranslucentValueKey = "kTranslucentValueKey";
-static char * const kSheetSlideEnableKey = "kSheetSlideEnableKey";
 
 @implementation UIViewController (SRSheetSlide)
 
+- (instancetype)initAndBecomeSheetSlideOnViewController:(UIViewController *)viewController {
+    if (self = [self init]) {
+        [self becomeSheetSlideOnViewController:viewController];
+    }
+    return self;
+}
+
+- (instancetype)initAndBecomeSheetSlideOnViewController:(UIViewController *)viewController sheetPosition:(SRSheetSlideViewControllerSheetPosition)sheetPosition {
+    if (self = [self initAndBecomeSheetSlideOnViewController:viewController]) {
+        self.sheetPosition = sheetPosition;
+    }
+    return self;
+}
+
+-(void)becomeSheet {
+    self.transitioningDelegate = self;
+    self.interactiveTransition.toViewController = self;
+}
+
+- (void)becomSheetWithSheetPosition:(SRSheetSlideViewControllerSheetPosition)sheetPosition {
+    self.sheetPosition = sheetPosition;
+    [self becomeSheet];
+}
+
+- (void)becomeSheetSlideOnViewController:(UIViewController *)viewController {
+    [self configureEdgeSlideGestureOnViewController:viewController];
+    [self becomeSheet];
+}
+
+- (void)becomeSheetSlideOnViewController:(UIViewController *)viewController sheetPosition:(SRSheetSlideViewControllerSheetPosition)sheetPosition {
+    self.sheetPosition = sheetPosition;
+    [self becomeSheetSlideOnViewController:viewController];
+}
+
 - (void)configureEdgeSlideGestureOnViewController:(UIViewController *)viewController {
     [[self interactiveTransition] prepareEdgeSlideGestureWithViewController:viewController];
+}
+
+- (void)backToNormal {
+    self.transitioningDelegate = nil;
 }
 
 #pragma mark - setter
 - (void)setSheetPosition:(SRSheetSlideViewControllerSheetPosition)sheetPosition {
     objc_setAssociatedObject(self, kAnimationTransitionKey, nil, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     objc_setAssociatedObject(self, kSheetPositionKey, @(sheetPosition), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    [self animationTransition].sheetPosition = sheetPosition;
+    [self interactiveTransition].sheetPosition = sheetPosition;
 }
 
 - (void)setDisplayPercent:(CGFloat)displayPercent {
@@ -37,12 +76,6 @@ static char * const kSheetSlideEnableKey = "kSheetSlideEnableKey";
 - (void)setTranslucentValue:(CGFloat)translucentValue {
     translucentValue = fmaxf(fminf(1, translucentValue), 0);
     objc_setAssociatedObject(self, kTranslucentValueKey, @(translucentValue), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
-- (void)setSheetSlideEnable:(BOOL)sheetSlideEnable {
-    self.transitioningDelegate = sheetSlideEnable ? self : nil;
-    self.interactiveTransition.toViewController = sheetSlideEnable ? self : nil;
-    objc_setAssociatedObject(self, kSheetSlideEnableKey, @(sheetSlideEnable), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 #pragma mark - getter
@@ -64,10 +97,6 @@ static char * const kSheetSlideEnableKey = "kSheetSlideEnableKey";
         translucentValue = 0.7;
     }
     return translucentValue;
-}
-
-- (BOOL)isSheetSlideEnable {
-    return [objc_getAssociatedObject(self, kSheetSlideEnableKey) boolValue];
 }
 
 - (SRSheetSlideViewControllerAnimationTransition *)animationTransition {
