@@ -11,6 +11,7 @@
 		824ADCD52254AD5F00DAF706 /* SRSheetSlideViewControllerAnimationTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 824ADCD42254AD5F00DAF706 /* SRSheetSlideViewControllerAnimationTransition.m */; };
 		824ADCDA2254B4E800DAF706 /* UIView+SRSheetSlide.m in Sources */ = {isa = PBXBuildFile; fileRef = 824ADCD92254B4E800DAF706 /* UIView+SRSheetSlide.m */; };
 		824ADCDD2254BD8E00DAF706 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824ADCDC2254BD8E00DAF706 /* SecondViewController.m */; };
+		824ADCE02254CCE300DAF706 /* SRSheetSlideViewControllerInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 824ADCDF2254CCE300DAF706 /* SRSheetSlideViewControllerInteractiveTransition.m */; };
 		8277A9382254A340001A2194 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8277A9372254A340001A2194 /* AppDelegate.m */; };
 		8277A93B2254A340001A2194 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8277A93A2254A340001A2194 /* ViewController.m */; };
 		8277A93E2254A340001A2194 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8277A93C2254A340001A2194 /* Main.storyboard */; };
@@ -48,6 +49,8 @@
 		824ADCD92254B4E800DAF706 /* UIView+SRSheetSlide.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SRSheetSlide.m"; sourceTree = "<group>"; };
 		824ADCDB2254BD8E00DAF706 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		824ADCDC2254BD8E00DAF706 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		824ADCDE2254CCE300DAF706 /* SRSheetSlideViewControllerInteractiveTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRSheetSlideViewControllerInteractiveTransition.h; sourceTree = "<group>"; };
+		824ADCDF2254CCE300DAF706 /* SRSheetSlideViewControllerInteractiveTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRSheetSlideViewControllerInteractiveTransition.m; sourceTree = "<group>"; };
 		8277A9332254A340001A2194 /* SRSheetSlideViewControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SRSheetSlideViewControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8277A9362254A340001A2194 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8277A9372254A340001A2194 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -152,12 +155,14 @@
 			isa = PBXGroup;
 			children = (
 				824ADCD62254AD8C00DAF706 /* SRSheetSlideDefine.h */,
+				824ADCD82254B4E800DAF706 /* UIView+SRSheetSlide.h */,
+				824ADCD92254B4E800DAF706 /* UIView+SRSheetSlide.m */,
 				820AA0B72254A74F0072679A /* UIViewController+SRSheetSlide.h */,
 				820AA0B82254A74F0072679A /* UIViewController+SRSheetSlide.m */,
 				824ADCD32254AD5F00DAF706 /* SRSheetSlideViewControllerAnimationTransition.h */,
 				824ADCD42254AD5F00DAF706 /* SRSheetSlideViewControllerAnimationTransition.m */,
-				824ADCD82254B4E800DAF706 /* UIView+SRSheetSlide.h */,
-				824ADCD92254B4E800DAF706 /* UIView+SRSheetSlide.m */,
+				824ADCDE2254CCE300DAF706 /* SRSheetSlideViewControllerInteractiveTransition.h */,
+				824ADCDF2254CCE300DAF706 /* SRSheetSlideViewControllerInteractiveTransition.m */,
 			);
 			path = SRSheetSlideViewController;
 			sourceTree = "<group>";
@@ -295,6 +300,7 @@
 				820AA0B92254A74F0072679A /* UIViewController+SRSheetSlide.m in Sources */,
 				824ADCDA2254B4E800DAF706 /* UIView+SRSheetSlide.m in Sources */,
 				8277A93B2254A340001A2194 /* ViewController.m in Sources */,
+				824ADCE02254CCE300DAF706 /* SRSheetSlideViewControllerInteractiveTransition.m in Sources */,
 				824ADCDD2254BD8E00DAF706 /* SecondViewController.m in Sources */,
 				8277A9462254A340001A2194 /* main.m in Sources */,
 				8277A9382254A340001A2194 /* AppDelegate.m in Sources */,
@@ -476,7 +482,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.starrain.SRSheetSlideViewControllerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.starrain.SRSheetSlideViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -493,7 +499,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.starrain.SRSheetSlideViewControllerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.starrain.SRSheetSlideViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

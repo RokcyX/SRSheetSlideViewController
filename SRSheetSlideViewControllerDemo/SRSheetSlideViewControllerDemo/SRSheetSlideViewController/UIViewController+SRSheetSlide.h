@@ -33,6 +33,13 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic,assign,getter=isSheetSlideEnable) BOOL sheetSlideEnable;
 
+/**
+ 在传入的viewController上配置边缘滑动手势
+
+ @param viewController 控制器
+ */
+- (void)configureEdgeSlideGestureOnViewController:(UIViewController *)viewController;
+
 @end
 
 NS_ASSUME_NONNULL_END

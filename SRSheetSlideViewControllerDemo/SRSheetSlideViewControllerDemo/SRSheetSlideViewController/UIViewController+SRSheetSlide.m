@@ -8,6 +8,7 @@
 #import "UIViewController+SRSheetSlide.h"
 #import <objc/runtime.h>
 #import "SRSheetSlideViewControllerAnimationTransition.h"
+#import "SRSheetSlideViewControllerInteractiveTransition.h"
 
 static char * const kSheetPositionKey = "kSheetPositionKey";
 static char * const kAnimationTransitionKey = "kAnimationTransitionKey";
@@ -17,6 +18,10 @@ static char * const kTranslucentValueKey = "kTranslucentValueKey";
 static char * const kSheetSlideEnableKey = "kSheetSlideEnableKey";
 
 @implementation UIViewController (SRSheetSlide)
+
+- (void)configureEdgeSlideGestureOnViewController:(UIViewController *)viewController {
+    [[self interactiveTransition] prepareEdgeSlideGestureWithViewController:viewController];
+}
 
 #pragma mark - setter
 - (void)setSheetPosition:(SRSheetSlideViewControllerSheetPosition)sheetPosition {
@@ -36,6 +41,7 @@ static char * const kSheetSlideEnableKey = "kSheetSlideEnableKey";
 
 - (void)setSheetSlideEnable:(BOOL)sheetSlideEnable {
     self.transitioningDelegate = sheetSlideEnable ? self : nil;
+    self.interactiveTransition.toViewController = sheetSlideEnable ? self : nil;
     objc_setAssociatedObject(self, kSheetSlideEnableKey, @(sheetSlideEnable), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
@@ -74,21 +80,20 @@ static char * const kSheetSlideEnableKey = "kSheetSlideEnableKey";
     return animationTransition;
 }
 
-//- (UIPercentDrivenInteractiveTransition *)interactiveTransition {
-//    UIPercentDrivenInteractiveTransition *interactiveTransition = objc_getAssociatedObject(self, kInteractiveTransitionKey);
-//    if (!interactiveTransition) {
-//        interactiveTransition = [self interactiveTransitionWithSheetPosition:self.sheetPosition];
-//        objc_setAssociatedObject(self, kInteractiveTransitionKey, interactiveTransition, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-//    }
-//    return interactiveTransition;
-//}
+- (SRSheetSlideViewControllerInteractiveTransition *)interactiveTransition {
+    SRSheetSlideViewControllerInteractiveTransition *interactiveTransition = objc_getAssociatedObject(self, kInteractiveTransitionKey);
+    if (!interactiveTransition) {
+        interactiveTransition = [[SRSheetSlideViewControllerInteractiveTransition alloc] init];
+        interactiveTransition.sheetPosition = self.sheetPosition;
+        objc_setAssociatedObject(self, kInteractiveTransitionKey, interactiveTransition, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    }
+    return interactiveTransition;
+}
 
 #pragma mark - custom
-
-
-//- (void)prepareGestureWithNeedSideSlideController:(UIViewController *)viewController {
+- (void)prepareGestureWithNeedSideSlideController:(UIViewController *)viewController {
 //    [self.interactiveTransition prepareGestureWithNeedSideSlideController:viewController];
-//}
+}
 
 #pragma mark - UIViewControllerTransitioningDelegate
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
@@ -101,12 +106,12 @@ static char * const kSheetSlideEnableKey = "kSheetSlideEnableKey";
     return [self animationTransition];
 }
 
-//- (id<UIViewControllerInteractiveTransitioning>)interactionControllerForPresentation:(id<UIViewControllerAnimatedTransitioning>)animator {
-//    return self.interactiveTransition.interactiving ? self.interactiveTransition : nil;
-//}
-//
-//- (id<UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id<UIViewControllerAnimatedTransitioning>)animator {
-//    return self.interactiveTransition.interactiving ? self.interactiveTransition : nil;
-//}
+- (id<UIViewControllerInteractiveTransitioning>)interactionControllerForPresentation:(id<UIViewControllerAnimatedTransitioning>)animator {
+    return [self interactiveTransition].interactiving ? [self interactiveTransition] : nil;
+}
+
+- (id<UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id<UIViewControllerAnimatedTransitioning>)animator {
+    return [self interactiveTransition].interactiving ? [self interactiveTransition] : nil;
+}
 
 @end

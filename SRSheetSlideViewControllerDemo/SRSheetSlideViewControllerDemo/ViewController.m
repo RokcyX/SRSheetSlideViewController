@@ -19,13 +19,18 @@ static NSString * const kSheetPositionKey = @"kSheetPositionKey";
 
 @property (nonatomic,strong) NSArray *menuList;
 
+@property (nonatomic,strong) SecondViewController *vc;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.vc = [[SecondViewController alloc] init];
+    self.vc.sheetPosition = SRSheetSlideViewControllerSheetPositionBottom;
+    self.vc.sheetSlideEnable = YES;
+    [self.vc configureEdgeSlideGestureOnViewController:self];
 }
 
 - (NSArray *)menuList {
@@ -54,10 +59,9 @@ static NSString * const kSheetPositionKey = @"kSheetPositionKey";
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    SecondViewController *vc = [[SecondViewController alloc] init];
-    vc.sheetSlideEnable = YES;
-    vc.sheetPosition = [[[self.menuList objectAtIndex:indexPath.row] valueForKey:kSheetPositionKey] integerValue];
-    [self presentViewController:vc animated:YES completion:nil];
+    self.vc.sheetPosition = [[[self.menuList objectAtIndex:indexPath.row] valueForKey:kSheetPositionKey] integerValue];
+    
+    [self presentViewController:self.vc animated:YES completion:nil];
 }
 
 @end
