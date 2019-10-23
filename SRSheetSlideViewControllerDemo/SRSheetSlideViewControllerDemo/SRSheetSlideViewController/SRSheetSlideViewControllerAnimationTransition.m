@@ -146,7 +146,9 @@
         }
         self.translucentView.alpha = 0;
     } completion:^(BOOL finished) {
-        if (![transitionContext transitionWasCancelled]) {
+        if (@available(iOS 13, *)) {
+            
+        } else if (![transitionContext transitionWasCancelled]) {
             [containerView addSubview:toVC.view];
             [self.translucentView removeFromSuperview];
             self.translucentView = nil;
